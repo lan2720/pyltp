@@ -118,7 +118,7 @@ else:
     extra_compile_args += ['-std=c++0x']
 
 if not 'MACOSX_DEPLOYMENT_TARGET' in os.environ:
-    os.environ['MACOSX_DEPLOYMENT_TARGET'] = '10.12'
+    os.environ['MACOSX_DEPLOYMENT_TARGET'] = '10.14'
 
 ext_modules = [Extension('pyltp',
     include_dirs=includes,
